@@ -1,0 +1,550 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    /* background-image: url(/images/mywebsite-backgrond); */
+}
+/*------------------------fist-page--------------------*/
+
+.section-one{
+    background-image: linear-gradient(0deg,rgba(55, 102, 75, 0.56) 85%, rgba(0, 0, 0, 0.75) 95%), url(/images/forest\ image.jpg);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.logo img{
+    width:270px;
+    height: auto;
+}
+.section-one header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.section-one header nav ul{
+    display: flex;
+    gap: 20px;
+    margin-right: 11px;
+    margin-bottom: 20px;
+}
+.section-one header nav ul li{
+    display: inline-block;
+    padding: 8px 12px;   
+}
+.section-one header nav ul li a{
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+}
+.section-one header nav ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: greenyellow;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.section-one header nav ul li:hover::after{
+    width: 100%;
+}
+div h1{
+    text-align: center;
+    font-size: 70px;
+    margin-top: -10px;
+    color: #fff;
+}
+div p{
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    font-size: 20px;
+}
+.hero-button{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 12px 34px;
+    margin-top: 40px;
+    margin-left: 37.4%;
+}
+.hero-button:hover{
+    background-color: brown;
+    border: 1px solid brown;
+    transition: 1s;
+}
+/*-----------------------------second-page-----------------------------------*/
+.all .section-two nav{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.nav-links2 ul{
+    display: flex;
+    padding: 25px 34px;
+    gap: 100px;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border: 1px solid black;
+    /* border-radius: 50px; */
+    position: sticky;
+    top: 0; 
+    /* background-image: url(/images/img-for-definition.jpg);   */
+}
+.nav-links2 ul li a{
+    color: white;
+    font-size: 17px;
+   font-weight: bold;
+}
+.foret-import{
+    border: 1px solid white;
+    border-radius: 9px;
+    padding: 10px;
+    border-color: rgb(255, 251, 251);
+    background-color: grey;
+}
+.section-two nav ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: greenyellow;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.section-two nav ul li:hover::after{
+    width: 100%;
+}
+.nav-links2{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.text1{
+    display: flex;
+}
+.letitre{
+    width: 50%;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+}
+.title span{
+    font-size: 70px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(59, 81, 59);
+    font-weight: bold;
+}
+.text1 p{
+    color: black;
+    text-align: justify;
+    font-weight: bold;
+    line-height: 1.3;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/*a comprendre bien a la fin*/
+.img-wrapp{
+    overflow: hidden;
+    margin-left: 10px;
+    padding-top: 20px;
+    padding-left: 40px;
+}
+.img-wrapp img{
+    width: 600px;
+    height: auto;
+    display: block;
+    margin-top: 50px;
+    margin-right: 80px;
+    border-radius: 20px;
+    box-shadow: 3px 2px 10px rgba(6, 4, 4, 0.301);
+}
+/*okkkkkkkkkkkkkkkkkkkkkkkoooooooooo*/
+/*les types de forets*/
+.les-types-de-forets {
+    width: 100%;
+    margin: auto;
+    padding: 80px 0px;
+    text-align: center;
+    margin-top: 20vh;
+    background-color: rgba(181, 196, 181, 0.548);
+    height: auto;
+}
+
+.les-types-de-forets h1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: stretch;
+    margin-top: 40px;
+}
+
+.course-col {
+    flex: 1;
+    padding: 30px 20px; 
+    background: #b8d9a2;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centre le contenu verticalement */
+    align-items: center;     /* Centre horizontalement */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.course-col p {
+    color: black;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.6;
+    padding: 0; /* Supprime le padding p */
+    margin: 0;
+    margin-top: 10px;
+}
+
+.course-col h3 {
+    font-weight: 600;
+    margin: 10px 0 20px;
+    color: #fff;
+    border: 2px solid grey;
+    border-radius: 10px;
+    background-color: grey;
+    border-width: 10px;
+}
+
+.course-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+}
+
+.trait-separent{
+    width: 300px;
+    height: 4px;
+    background-color: rgb(134, 224, 134);
+    border-radius: 2px;
+    margin: 80px auto;
+}
+
+.section-tree header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.section-tree h2{
+    font-size: 2.5em;
+}
+
+.section-tree ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.section-tree ul li{
+    display: flex;
+    padding: 20px;
+    border: 1px solid #68e421;
+    box-sizing: border-box;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 300px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    background: #69e42123;
+  }
+.section-tree .drapeau-img{
+  width: 250px;      
+  height: 200px;      
+  /* object-fit: cover; */
+  border-radius: 10px; 
+}
+
+.canada-norvege{
+    display: flex;
+    gap: 20px;
+}
+
+.section-tree i {
+    font-size: 10px;
+}
+
+.section-tree a{
+    color: black;
+    font-weight: 400;
+}
+
+.section-tree li{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.section-tree .lire-plus{
+    margin-left: auto;
+    border: 2px solid;
+    border-radius: 4px;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-tree li:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+}
+
+.section-tree i a:hover{
+    background-color: rgb(5, 22, 22);
+    color: #fff;
+}
+/*-----------------------------Les forest du maroc --------------------------*/
+.section-four h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding-bottom: 15px;
+    font-size: 2.5em;
+}
+.section-four p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.centered-part {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold; /* optionnel pour la mettre en valeur */
+}
+.section-four {
+    background-image: url(/vvvvvv.avif);
+    background-size: contain;
+    background-repeat: repeat;
+    height: auto;
+    padding-top: 100px;
+}
+
+.section-four {
+    padding: 40px;
+    background-color: #f5f5f5;
+    font-family: sans-serif;
+  }
+  
+  .foret-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 40px 0;
+  }
+  
+  .foret-content {
+    flex: 1;
+    min-width: 280px;
+    margin-top: 30px;
+  }
+  
+  .foret-content h3{
+    font-size: 30px;
+    margin-top: 0;
+  }
+  .foret-image {
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+  }
+  
+  
+  .check-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+  }
+  
+  .check-list li {
+    margin-bottom: 5px;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-left: 30px;
+  }
+  
+  .check-list i {
+    color: #4a7c59;
+    margin-right: 8px;
+  }
+
+  .map-link {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 50px; 
+    margin-right: 20px;
+  }
+  
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .foret-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .foret-content {
+      order: 1;
+    }
+  
+    .foret-image {
+      order: 2;
+    }
+  }
+
+  .foret-image img {
+    width: 550px;
+    height: 300px; /* par exemple */
+    object-fit: cover; /* rogne pour remplir sans déformer */
+    border: 5px solid #4a7c59;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn-hover {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  .next-page-button{
+    display: flex;
+    background: #ffffff;
+    justify-content: flex-end;
+    margin-top: 0;
+    padding-right: 20px;
+  }
+
+  /*-------------------------footer-----------------------------------*/
+   footer{
+        background: #343434;
+        padding-top: 50px;
+    }
+    .footer-container{
+        width: 1140px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .footer-content{
+        width: 33.3%;
+    }
+    .footer-content h3{
+        font-size: 28px;
+        margin-bottom: 15px;
+        text-align: center;
+        color: #69e4216b;
+    }
+    .footer-content p{
+         text-align: center;
+        color: #fff;
+        padding: 7px;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    .footer-content ul{
+        text-align: center;
+    }
+    .list{
+        padding: 0;
+        color: #fff;
+    }
+    .list li{
+        width: auto;
+        text-align: center;
+        list-style-type:none;
+        padding: 7px;
+        position: relative;
+    }
+    .list a {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px; 
+        color: #fff;
+    }
+        
+    .list li::before{
+        content: '';
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 100%;
+        width: 0;
+        height: 2px;
+        background: greenyellow;
+        transition-duration: 0.5s;
+    }
+    .list li:hover::before{
+        width: 70px;    /*largeur du pseudo-element passe de 0px a 70px*/
+    }
+    .social-icons{
+        text-align: center;
+        padding: 0;
+    }
+    .social-icons li{
+        display: inline-block;
+        text-align: center;
+        padding: 5px;
+    }
+    .social-icons i{
+        color: white;
+        font-size: 25px;
+    }
+    a{
+        text-decoration: none;
+    }
+    a:hover{
+        color: #ffffff;
+    }
+    .social-icons i:hover{
+        color: greenyellow;
+    }
+    .bottom-bar{
+        background: greenyellow;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 50px;
+    }
+    .bottom-bar p{
+        color: #343434;
+        margin: 0;
+        font-size: 16px;
+        padding: 7px;
+    }
